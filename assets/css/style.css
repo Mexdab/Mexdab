@@ -1,3 +1,20 @@
+/*-----------------------------------*\
+  #style.css
+\*-----------------------------------*/
+
+
+/**
+ * copyright 2022 @codewithsadee
+ */
+
+
+
+
+
+/*-----------------------------------*\
+  #CUSTOM PROPERTY
+\*-----------------------------------*/
+
 :root {
 
   /**
@@ -5,7 +22,6 @@
    */
 
   /* gradient */
-  
 
   --bg-gradient-onyx: linear-gradient(
     to bottom right, 
@@ -95,6 +111,8 @@
 
 }
 
+
+
 footer {
   background-color: var(--smoky-black);
   padding: 20px;
@@ -123,9 +141,6 @@ footer {
   color: var(--primary-color); /* Changes color on hover for interactivity */
   text-decoration: underline; /* Adds underline on hover for better accessibility */
 }
-
-
-
 
 
 
@@ -160,11 +175,6 @@ input, textarea {
   font: inherit;
 }
 
-::selection {
-  background: var(--orange-yellow-crayola);
-  color: var(--smoky-black);
-}
-
 :focus { outline-color: var(--orange-yellow-crayola); }
 
 html { font-family: var(--ff-poppins); }
@@ -172,12 +182,7 @@ html { font-family: var(--ff-poppins); }
 body { background: var(--smoky-black); }
 
 
-@media (max-width: 767px) {
-  /* Adjust main padding based on navbar height */
-  main {
-      padding-bottom: 70px; /* Example: adjust if navbar height changes */
-  }
-}
+
 
 
 /*-----------------------------------*\
@@ -483,7 +488,7 @@ main {
   border: 1px solid var(--jet);
   border-radius: 12px 12px 0 0;
   box-shadow: var(--shadow-2);
-  z-index: 10;
+  z-index: 5;
 }
 
 .navbar-list {
@@ -940,7 +945,7 @@ main {
 
 .select-item button {
   background: var(--eerie-black-2);
-  color: var (--light-gray);
+  color: var(--light-gray);
   font-size: var(--fs-6);
   font-weight: var(--fw-300);
   text-transform: capitalize;
@@ -1568,6 +1573,7 @@ textarea.form-input::-webkit-resizer { display: none; }
  * responsive larger than 768px screen
  */
 
+@media (min-width: 768px) {
 
   /**
    * REUSED STYLE
@@ -1593,8 +1599,6 @@ textarea.form-input::-webkit-resizer { display: none; }
   /**
    * NAVBAR
    */
-  
-
 
   .navbar-link { --fs-8: 15px; }
 
@@ -1659,6 +1663,7 @@ textarea.form-input::-webkit-resizer { display: none; }
     margin-left: auto;
   }
   
+}
 
 
 
@@ -1898,12 +1903,4 @@ textarea.form-input::-webkit-resizer { display: none; }
 
   .timeline-text { max-width: 700px; }
 
-}
-
-
-/* Add this to your existing CSS file */
-
-/* Hide the "Select category" button */
-.filter-select {
-  display: none;
 }
